@@ -1,5 +1,5 @@
 //
-//  Document.h
+//  DepartmentViewController.h
 //  Register
 //
 //  Created by Marek Hrusovsky on 01/12/14.
@@ -7,7 +7,8 @@
 //
 
 @import Cocoa;
-@class ManagingViewController;
+#import "ManagingViewController.h"
 
-@interface Document : NSPersistentDocument
+@interface DepartmentViewController : ManagingViewController
+
 @end

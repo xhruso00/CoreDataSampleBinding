@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6233" systemVersion="14A329f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6233"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="Document" customModuleProvider="">
+        <customObject id="-2" userLabel="File's Owner" customClass="Document">
             <connections>
+                <outlet property="box" destination="J7z-fD-s4e" id="ipw-qh-b5e"/>
+                <outlet property="popupButton" destination="UeN-Fd-Jea" id="YPr-n1-hmW"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
@@ -15,24 +17,47 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="507" height="413"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" id="gIp-Ho-8D9">
                 <rect key="frame" x="0.0" y="0.0" width="507" height="413"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
-                        <rect key="frame" x="119" y="195" width="268" height="22"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Your document contents here" id="JDq-Ah-v2f">
-                            <font key="font" metaFont="system" size="18"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UeN-Fd-Jea">
+                        <rect key="frame" x="18" y="369" width="146" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="hSp-8j-3sa"/>
+                            <constraint firstAttribute="width" constant="141" id="ohT-Ra-HD4"/>
+                        </constraints>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="ax2-tN-J7o" id="cDx-cV-Iwv">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="4IG-br-7lK">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="ax2-tN-J7o"/>
+                                    <menuItem title="Item 2" id="Jfx-W7-O83"/>
+                                    <menuItem title="Item 3" id="o0T-Gn-4x0"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <box autoresizesSubviews="NO" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="J7z-fD-s4e">
+                        <rect key="frame" x="17" y="16" width="473" height="347"/>
+                        <view key="contentView">
+                            <rect key="frame" x="1" y="1" width="471" height="345"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </box>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="OG3-1c-Sd0"/>
-                    <constraint firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="s6i-b7-llN"/>
+                    <constraint firstItem="UeN-Fd-Jea" firstAttribute="top" secondItem="gIp-Ho-8D9" secondAttribute="top" constant="20" id="3bm-oa-1vh"/>
+                    <constraint firstItem="UeN-Fd-Jea" firstAttribute="leading" secondItem="gIp-Ho-8D9" secondAttribute="leading" constant="20" id="8q7-63-Ovt"/>
+                    <constraint firstItem="J7z-fD-s4e" firstAttribute="leading" secondItem="gIp-Ho-8D9" secondAttribute="leading" constant="20" id="AaX-ck-PxB"/>
+                    <constraint firstItem="J7z-fD-s4e" firstAttribute="top" secondItem="UeN-Fd-Jea" secondAttribute="bottom" constant="11" id="DOE-Ws-hhN"/>
+                    <constraint firstAttribute="bottom" secondItem="J7z-fD-s4e" secondAttribute="bottom" constant="20" id="LzQ-xm-2Lw"/>
+                    <constraint firstAttribute="trailing" secondItem="J7z-fD-s4e" secondAttribute="trailing" constant="20" id="qhA-GA-cXW"/>
                 </constraints>
             </view>
             <connections>

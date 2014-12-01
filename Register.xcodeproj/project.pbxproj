@@ -15,6 +15,13 @@
 		D2B03A291A2C6CC2009982F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B03A281A2C6CC2009982F8 /* Images.xcassets */; };
 		D2B03A2C1A2C6CC2009982F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B03A2A1A2C6CC2009982F8 /* MainMenu.xib */; };
 		D2B03A381A2C6CC3009982F8 /* RegisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B03A371A2C6CC3009982F8 /* RegisterTests.m */; };
+		D2B03A441A2C6E11009982F8 /* ManagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B03A421A2C6E11009982F8 /* ManagingViewController.m */; };
+		D2B03A491A2C6E2C009982F8 /* DepartmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B03A471A2C6E2C009982F8 /* DepartmentViewController.m */; };
+		D2B03A4A1A2C6E2C009982F8 /* DepartmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B03A481A2C6E2C009982F8 /* DepartmentViewController.xib */; };
+		D2B03A4E1A2C6F8A009982F8 /* EmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B03A4C1A2C6F8A009982F8 /* EmployeeViewController.m */; };
+		D2B03A4F1A2C6F8A009982F8 /* EmployeeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B03A4D1A2C6F8A009982F8 /* EmployeeViewController.xib */; };
+		D2B03A581A2C92C3009982F8 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B03A571A2C92C3009982F8 /* Employee.m */; };
+		D2B03A5B1A2C92C3009982F8 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B03A5A1A2C92C3009982F8 /* Department.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,18 @@
 		D2B03A311A2C6CC3009982F8 /* RegisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B03A361A2C6CC3009982F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2B03A371A2C6CC3009982F8 /* RegisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterTests.m; sourceTree = "<group>"; };
+		D2B03A411A2C6E11009982F8 /* ManagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagingViewController.h; sourceTree = "<group>"; };
+		D2B03A421A2C6E11009982F8 /* ManagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagingViewController.m; sourceTree = "<group>"; };
+		D2B03A461A2C6E2C009982F8 /* DepartmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartmentViewController.h; sourceTree = "<group>"; };
+		D2B03A471A2C6E2C009982F8 /* DepartmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentViewController.m; sourceTree = "<group>"; };
+		D2B03A481A2C6E2C009982F8 /* DepartmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DepartmentViewController.xib; sourceTree = "<group>"; };
+		D2B03A4B1A2C6F8A009982F8 /* EmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeViewController.h; sourceTree = "<group>"; };
+		D2B03A4C1A2C6F8A009982F8 /* EmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeViewController.m; sourceTree = "<group>"; };
+		D2B03A4D1A2C6F8A009982F8 /* EmployeeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeViewController.xib; sourceTree = "<group>"; };
+		D2B03A561A2C92C3009982F8 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Employee.h; path = ../Employee.h; sourceTree = "<group>"; };
+		D2B03A571A2C92C3009982F8 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Employee.m; path = ../Employee.m; sourceTree = "<group>"; };
+		D2B03A591A2C92C3009982F8 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Department.h; path = ../Department.h; sourceTree = "<group>"; };
+		D2B03A5A1A2C92C3009982F8 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Department.m; path = ../Department.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +102,22 @@
 		D2B03A171A2C6CC2009982F8 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				D2B03A591A2C92C3009982F8 /* Department.h */,
+				D2B03A5A1A2C92C3009982F8 /* Department.m */,
+				D2B03A561A2C92C3009982F8 /* Employee.h */,
+				D2B03A571A2C92C3009982F8 /* Employee.m */,
 				D2B03A1A1A2C6CC2009982F8 /* AppDelegate.h */,
 				D2B03A1B1A2C6CC2009982F8 /* AppDelegate.m */,
 				D2B03A1F1A2C6CC2009982F8 /* Document.h */,
 				D2B03A201A2C6CC2009982F8 /* Document.m */,
+				D2B03A411A2C6E11009982F8 /* ManagingViewController.h */,
+				D2B03A421A2C6E11009982F8 /* ManagingViewController.m */,
+				D2B03A4B1A2C6F8A009982F8 /* EmployeeViewController.h */,
+				D2B03A4C1A2C6F8A009982F8 /* EmployeeViewController.m */,
+				D2B03A4D1A2C6F8A009982F8 /* EmployeeViewController.xib */,
+				D2B03A461A2C6E2C009982F8 /* DepartmentViewController.h */,
+				D2B03A471A2C6E2C009982F8 /* DepartmentViewController.m */,
+				D2B03A481A2C6E2C009982F8 /* DepartmentViewController.xib */,
 				D2B03A221A2C6CC2009982F8 /* Document.xib */,
 				D2B03A281A2C6CC2009982F8 /* Images.xcassets */,
 				D2B03A2A1A2C6CC2009982F8 /* MainMenu.xib */,
@@ -202,7 +233,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B03A4A1A2C6E2C009982F8 /* DepartmentViewController.xib in Resources */,
 				D2B03A241A2C6CC2009982F8 /* Document.xib in Resources */,
+				D2B03A4F1A2C6F8A009982F8 /* EmployeeViewController.xib in Resources */,
 				D2B03A291A2C6CC2009982F8 /* Images.xcassets in Resources */,
 				D2B03A2C1A2C6CC2009982F8 /* MainMenu.xib in Resources */,
 			);
@@ -223,9 +256,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2B03A271A2C6CC2009982F8 /* Document.xcdatamodeld in Sources */,
+				D2B03A441A2C6E11009982F8 /* ManagingViewController.m in Sources */,
+				D2B03A4E1A2C6F8A009982F8 /* EmployeeViewController.m in Sources */,
 				D2B03A211A2C6CC2009982F8 /* Document.m in Sources */,
 				D2B03A1E1A2C6CC2009982F8 /* main.m in Sources */,
+				D2B03A581A2C92C3009982F8 /* Employee.m in Sources */,
+				D2B03A491A2C6E2C009982F8 /* DepartmentViewController.m in Sources */,
 				D2B03A1C1A2C6CC2009982F8 /* AppDelegate.m in Sources */,
+				D2B03A5B1A2C92C3009982F8 /* Department.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

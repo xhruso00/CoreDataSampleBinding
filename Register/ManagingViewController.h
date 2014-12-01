@@ -1,5 +1,5 @@
 //
-//  Document.h
+//  ManagingViewController.h
 //  Register
 //
 //  Created by Marek Hrusovsky on 01/12/14.
@@ -7,7 +7,9 @@
 //
 
 @import Cocoa;
-@class ManagingViewController;
 
-@interface Document : NSPersistentDocument
+@interface ManagingViewController : NSViewController
+
+@property (strong) NSManagedObjectContext *managedObjectContext;
+
 @end
